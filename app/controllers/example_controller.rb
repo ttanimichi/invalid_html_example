@@ -7,6 +7,6 @@ class ExampleController < ApplicationController
   end
 
   def string
-    render 'example/template'
+    render 'example/implicit'
   end
 end
