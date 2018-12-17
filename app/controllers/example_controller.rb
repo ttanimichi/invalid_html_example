@@ -2,11 +2,13 @@ class ExampleController < ApplicationController
   def implicit
   end
 
-  def symbol
-    render :implicit
+  def template
+    render 'implicit'
   end
 
-  def string
-    render 'example/implicit'
+  def respond_to
+    respond_to do |format|
+      format.html
+    end
   end
 end
